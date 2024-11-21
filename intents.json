@@ -1,0 +1,83 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "patterns": [
+                "hola", "que tal", "como te va", "como estas?", "saludos",
+                "buenas tardes", "buenas noches", "hola", "¿puedes ayudarme?",
+                "hola, ORION", "hey", "qué hay de nuevo", "un saludo"
+            ],
+            "responses": [
+                "Hola, bienvenido a ORION Transportadora de Carga SAS. ¿En qué puedo ayudarte hoy?",
+                "¡Hola! ¿Cómo puedo asistirte en tus necesidades logísticas?",
+                "Saludos, ¿en qué puedo ayudarte?",
+                "Hola, gracias por contactarnos. Estamos aquí para resolver tus dudas.",
+                "¡Bienvenido a ORION! ¿Cómo podemos asistirte?",
+                "Hola, ¿cómo estás? ¿En qué podemos apoyarte hoy?"
+            ],
+            "follow_up": [
+                {
+                    "question": "¿Qué tipo de servicio estás buscando?",
+                    "options": [
+                        "Transporte nacional",
+                        "Transporte internacional",
+                        "Logística multimodal",
+                        "Consultoría logística"
+                    ]
+                },
+                {
+                    "question": "¿Cuándo necesitas el servicio?",
+                    "options": [
+                        "Lo antes posible",
+                        "Esta semana",
+                        "El próximo mes",
+                        "Aún no estoy seguro"
+                    ]
+                },
+                {
+                    "question": "¿De qué ciudad parte tu mercancía?",
+                    "options": [
+                        "Bogotá",
+                        "Medellín",
+                        "Cali",
+                        "Pereira",
+                        "Bucaramanga",
+                        "Cartagena",
+                        "Barranquilla",
+                        "Cúcuta",
+                        "Santa Marta",
+                        "Villavicencio"
+                    ]
+                }
+            ]
+        },
+        {
+            "tag": "detalle_envio",
+            "patterns": [
+                "Quiero enviar algo",
+                "Necesito un transporte",
+                "Necesito mover mercancía"
+            ],
+            "responses": [
+                "Perfecto, ¿qué tipo de carga necesitas transportar?",
+                "Entendido, dime el destino de tu mercancía.",
+                "¿Cuánto volumen o peso tiene tu carga? (puedes elegir o dar un estimado)."
+            ],
+            "follow_up": [
+                {
+                    "question": "¿Qué tipo de transporte necesitas?",
+                    "options": ["Terrestre", "Marítimo", "Aéreo", "Multimodal"]
+                },
+                {
+                    "question": "¿Con qué frecuencia realizas envíos?",
+                    "options": [
+                        "Una sola vez",
+                        "Semanalmente",
+                        "Mensualmente",
+                        "Varias veces al año"
+                    ]
+                }
+            ]
+        }
+    ]
+}
